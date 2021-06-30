@@ -8,7 +8,7 @@ You have to download these files placing them in the main folder:
 - https://github.com/ayoolaolafenwa/PixelLib/releases/download/1.2/mask_rcnn_coco.h5
 
 # Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Lnty7lWv_Ys/0.jpg)](https://www.youtube.com/watch?v=Lnty7lWv_Ys).  
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Np-ynPeLaKg/0.jpg)](https://www.youtube.com/watch?v=Np-ynPeLaKg).  
 
 # Features
 Created using these libraries/framework:
