@@ -1,5 +1,5 @@
 # Image-Segmentation
-Semantic & Instance Image Segmentation web-app, based on computer vision and deep learning, created using PixelLib library, Flask and Tensorflow/Keras
+Semantic & Instance Image 🖼 Segmentation web-app, based on Computer Vision 💻🤖 and Deep Learning 🧠, created using PixelLib library, Flask 🌶 and Tensorflow/Keras 🔥
 
 # Before to start
 
