@@ -1,0 +1,52 @@
+{% extends "base.html" %}{% block content %}
+<p>&nbsp;</p>
+  <h1 class="entry-title" style="text-align: center;">Semantic & Instance Image Segmentation</h1>
+  <h1 class="entry-title" style="text-align: center;"><img style="font-size: 14px; font-family: -webkit-standard;" src="/static/image-3.png" alt="" width="56" height="56" />&nbsp;&nbsp;<img src="/static/image-4.png" alt="" width="56" height="56" /></h1>
+  <p style="text-align: center;">Semantic & Instance Image Segmentation web-app, using PixelLib library</p>
+  <p style="text-align: center;">Web-app created by Paolo David</p>
+  <p style="text-align: center;"><img src="http://www.paolodavid.com/wp-content/img/github-2.png" alt="" width="26" height="26" />&nbsp;<a href="https://github.com/paolodavid">https://github.com/paolodavid</a></p>
+
+<div class="main">
+  <form id="imgform" action="/" method="post" enctype = "multipart/form-data">
+    <div class="panel">
+      <input id="file-upload" name="file"  class="hidden" type="file" required accept="image/x-png,image/gif,image/jpeg" />
+      <label for="file-upload" id="file-drag" class="upload-box">
+        <div id="upload-caption">click to select image</div>
+        <img id="image-preview" class="hidden" />
+      </label>
+    </div>
+    <div style="text-align: center;">
+      <input type="submit" value="Submit" class="button" onclick="document.getElementByID('imgform').reset()" />
+      <input type="button" value="Clear" class="button" onclick="clearImage();"/>
+    </div>
+  </form>
+  {% if result %}
+  <div id="imgg" style="overflow: hidden; max-width: 70%; margin: auto;">
+    <div id="image-box"><br />
+    <div id="pred-result" class="hidden">&nbsp;</div>
+    </div>
+    </div>
+    <div id="pimgg" style="overflow: hidden; max-width: 70%; margin: auto;">
+    <div id="image-box">
+    <table style="border-collapse: collapse; width: 100%;" border="1">
+    <tbody>
+    <tr>
+    <td style="width: 50%;">
+    <p style="text-align: center;">Semantic Segmentation</p>
+    <p><img id="image-display" style="object-fit: cover; width: 100%; min-height: 100%;" src="static/{{pimggg}}" /></p>
+    </td>
+    <td style="width: 50%;">
+    <p style="text-align: center;">Instance Segmentation</p>
+    <p><img id="image-display" style="object-fit: cover; width: 100%; min-height: 100%;" src="static/2{{pimggg}}" /></p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <br />
+    <div id="pred-result" class="hidden">&nbsp;</div>
+    </div>
+    </div>
+  {% endif%}
+</div>
+
+{% endblock %}
